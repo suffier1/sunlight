@@ -1,19 +1,33 @@
 {
     "current":  {
-                    "version":  "1.5.1",
+                    "version":  "1.5.2",
                     "date":  "2026-11-25",
                     "setup":  {
-                                  "file":  "Sunlight-Setup-1.5.1.exe",
-                                  "size":  19546112,
-                                  "sha256":  "ae845edbe42741a12fb9914ef860bafa1a13ba942e9c0217f6741be743b47357"
+                                  "file":  "Sunlight-Setup-1.5.2.exe",
+                                  "size":  19550208,
+                                  "sha256":  "c2cbbe9cffa5a2957b75f4a9a088cb7280e5d6d944522b739e2d8ce6076ab649"
                               },
                     "zip":  {
-                                "file":  "Sunlight-Windows-1.5.1.zip",
-                                "size":  19382439,
-                                "sha256":  "7b7a0c260b90bb743963870b71d96212c8adc65bc23a79525a7c6b3d94acb3fd"
+                                "file":  "Sunlight-Windows-1.5.2.zip",
+                                "size":  19386547,
+                                "sha256":  "8b1ab21692148c2d70ab66d6e1587afa80ad5a920e4dbe9117f4f245a476ae79"
                             }
                 },
     "previous":  [
+                     {
+                         "version":  "1.5.1",
+                         "date":  "2026-11-25",
+                         "setup":  {
+                                       "file":  "versions/Sunlight-Setup-1.5.1.exe",
+                                       "size":  19546112,
+                                       "sha256":  "ae845edbe42741a12fb9914ef860bafa1a13ba942e9c0217f6741be743b47357"
+                                   },
+                         "zip":  {
+                                     "file":  "versions/Sunlight-Windows-1.5.1.zip",
+                                     "size":  19382439,
+                                     "sha256":  "7b7a0c260b90bb743963870b71d96212c8adc65bc23a79525a7c6b3d94acb3fd"
+                                 }
+                     },
                      {
                          "version":  "1.5.0",
                          "date":  "2026-11-25",

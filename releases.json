@@ -1,19 +1,32 @@
 {
     "current":  {
-                    "version":  "1.5.0",
+                    "version":  "1.5.1",
                     "date":  "2026-11-25",
                     "setup":  {
-                                  "file":  "Sunlight-Setup-1.5.0.exe",
-                                  "size":  19522560,
-                                  "sha256":  "14994782b574e61fdefa5dfa7f21676eb62836686b785c5991169d138e0dcacd"
+                                  "file":  "Sunlight-Setup-1.5.1.exe",
+                                  "size":  19546112,
+                                  "sha256":  "ae845edbe42741a12fb9914ef860bafa1a13ba942e9c0217f6741be743b47357"
                               },
                     "zip":  {
-                                "file":  "Sunlight-Windows-1.5.0.zip",
-                                "size":  19359080,
-                                "sha256":  "b6297ccb2dff6107e29ecd353d6c6328482fcf4a9ad8aef125994622a488c246"
+                                "file":  "Sunlight-Windows-1.5.1.zip",
+                                "size":  19382439,
+                                "sha256":  "7b7a0c260b90bb743963870b71d96212c8adc65bc23a79525a7c6b3d94acb3fd"
                             }
                 },
     "previous":  [
-
+                     {
+                         "version":  "1.5.0",
+                         "date":  "2026-11-25",
+                         "setup":  {
+                                       "file":  "versions/Sunlight-Setup-1.5.0.exe",
+                                       "size":  19522560,
+                                       "sha256":  "14994782b574e61fdefa5dfa7f21676eb62836686b785c5991169d138e0dcacd"
+                                   },
+                         "zip":  {
+                                     "file":  "versions/Sunlight-Windows-1.5.0.zip",
+                                     "size":  19359080,
+                                     "sha256":  "b6297ccb2dff6107e29ecd353d6c6328482fcf4a9ad8aef125994622a488c246"
+                                 }
+                     }
                  ]
 }

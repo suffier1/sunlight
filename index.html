@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Sunlight 논문리더. Windows용 64비트 설치파일, 설치 방법과 사용 안내.">
+  <meta name="color-scheme" content="light dark">
+  <title>Sunlight — 논문리더</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="shell masthead">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Sunlight</a>
+    <nav aria-label="페이지 목차">
+      <a href="#install">설치</a>
+      <a href="#guide">사용 안내</a>
+      <a href="#previous">이전 버전</a>
+      <a href="#help">문제 해결</a>
+    </nav>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <h1 id="title">논문리더</h1>
+        <!-- release:current -->
+        <p class="pending">첫 버전을 올리는 중입니다. 잠시 뒤 다시 열어 주세요.</p>
+        <!-- /release:current -->
+        <ul class="requirements">
+          <li>Windows 10·11 64비트</li>
+          <li>관리자 권한 없이 내 사용자 폴더에 설치됩니다.</li>
+          <li>창은 Microsoft Edge WebView2로 엽니다. 대부분의 PC에 이미 들어 있고, 없으면 기본 브라우저에서 열립니다.</li>
+        </ul>
+      </div>
+      <figure class="hero-figure">
+        <a class="shot" href="images/reader-memo.webp">
+          <img src="images/reader-memo.webp" width="2160" height="960" alt="Sunlight에서 연 Attention Is All You Need 1쪽. 초록의 한 문장이 노란색으로 표시되어 있고, 오른쪽 논문 도구의 메모 탭에 그 문장과 한국어 메모가 보인다." decoding="async" fetchpriority="high">
+        </a>
+        <figcaption><cite lang="en">Attention Is All You Need</cite>에서 문장을 표시하고 메모를 단 화면</figcaption>
+      </figure>
+    </section>
+
+    <section id="install" class="block" aria-labelledby="install-title">
+      <h2 id="install-title">설치</h2>
+      <ol class="steps">
+        <li>
+          <p><strong>Windows용 64비트 설치파일</strong>을 받습니다.</p>
+          <p class="sub">브라우저가 파일을 막으면 다운로드 목록(<kbd>Ctrl</kbd>+<kbd>J</kbd>)을 엽니다. Chrome은 이 파일 옆의 <strong>계속</strong>, Edge는 <strong>⋯ → 유지</strong>를 누릅니다. Edge가 한 번 더 물으면 <strong>자세히 표시 → 그래도 계속</strong>을 누릅니다. 문구는 브라우저 버전에 따라 조금 다를 수 있습니다.</p>
+        </li>
+        <li>
+          <p>받은 파일을 엽니다.</p>
+          <p class="sub">파란 창 <strong>Windows의 PC 보호</strong>가 나오면 <strong>추가 정보</strong>를 누른 뒤 <strong>실행</strong>을 누릅니다. 설치 폴더를 확인하고 <strong>설치</strong>를 누릅니다. 기본 폴더는 <code>%LOCALAPPDATA%\Programs\Sunlight</code>입니다.</p>
+        </li>
+        <li>
+          <p><strong>Sunlight 열기</strong>를 누릅니다.</p>
+          <p class="sub">다음부터는 시작 메뉴에서 Sunlight를 엽니다. 홈에서 <strong>PDF 추가</strong>를 누르거나 PDF를 창에 끌어다 놓으면 바로 읽을 수 있습니다.</p>
+        </li>
+      </ol>
+      <div class="note">
+        <h3>경고 창이 나오는 이유</h3>
+        <p>Sunlight 설치파일에는 유료 코드 서명 인증서가 없어서 Windows와 브라우저가 게시자를 확인할 수 없다고 표시합니다. 받은 파일이 온전한지는 아래 <a href="#verify">받은 파일 확인</a>에서 비교할 수 있습니다. 설치한 뒤 앱 안에서 받는 업데이트는 발행자 서명을 확인한 파일만 설치됩니다.</p>
+      </div>
+      <p>이미 Sunlight를 쓰고 있다면 다시 받을 필요 없이 앱에서 업데이트합니다. <a href="#update">업데이트 방법</a></p>
+    </section>
+
+    <section id="verify" class="block" aria-labelledby="verify-title">
+      <h2 id="verify-title">받은 파일 확인</h2>
+      <p>받은 파일의 SHA-256 값이 아래 값과 같으면 내려받는 동안 파일이 깨지지 않은 것입니다. 이 값도 같은 사이트에 있으므로 사이트 자체가 바뀐 경우까지 가려내지는 못합니다. 설치한 뒤의 업데이트는 앱이 발행자 서명으로 따로 확인합니다.</p>
+      <!-- release:verify -->
+      <p class="pending">첫 버전을 올리면 여기에 파일별 SHA-256 값이 표시됩니다.</p>
+      <!-- /release:verify -->
+      <form id="compare" class="compare" hidden>
+        <h3>이 브라우저에서 비교하기</h3>
+        <label for="compare-file">받은 설치파일 또는 ZIP</label>
+        <input type="file" id="compare-file" accept=".exe,.zip" aria-describedby="compare-note">
+        <p id="compare-note" class="sub">선택한 파일은 이 브라우저 안에서만 읽고 어디에도 보내지 않습니다.</p>
+        <p id="compare-result" class="result" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="guide" class="block" aria-labelledby="guide-title">
+      <h2 id="guide-title">사용 안내</h2>
+
+      <article class="feature" aria-labelledby="read-title">
+        <div class="feature-copy">
+          <h3 id="read-title">읽기와 메모</h3>
+          <p>PDF를 열면 원문이 그대로 보입니다. 문장을 드래그하면 나오는 막대에서 색을 고르면 표시되고, <strong>논문 도구 → 메모</strong>에 메모를 적을 수 있습니다.</p>
+          <p>다시 열면 읽던 쪽으로 돌아가고, 홈의 <strong>이어 읽기</strong>에 최근에 읽은 논문이 나옵니다. 읽기와 메모에는 AI 계정이 필요 없습니다.</p>
+        </div>
+        <figure>
+          <a class="shot" href="images/home-continue.webp"><img src="images/home-continue.webp" width="1520" height="760" alt="Sunlight 홈. 논문 검색창과 PDF 추가 버튼 아래 이어 읽기에 Attention Is All You Need, 1쪽까지 읽음, 오늘이 보인다." loading="lazy" decoding="async"></a>
+          <figcaption>홈의 이어 읽기</figcaption>
+        </figure>
+      </article>
+
+      <article class="feature" aria-labelledby="ai-title">
+        <div class="feature-copy">
+          <h3 id="ai-title">번역·요약 (선택)</h3>
+          <p>번역, 요약, 설명, 질문은 내가 연결한 AI 서비스로 처리합니다. <strong>⋯ → 설정</strong>에서 Codex, Claude, Gemini 중 쓰고 있는 서비스의 계정을 연결합니다. 사용량은 그 계정의 한도에서 차감됩니다.</p>
+          <p>버튼을 누르기 전에 무엇을 어느 서비스로 보내는지 그 자리에 표시됩니다. 필요한 내용만 보내고, 연결하지 않으면 아무것도 보내지 않습니다.</p>
+        </div>
+        <figure>
+          <a class="shot" href="images/selection-send.webp"><img src="images/selection-send.webp" width="900" height="315" alt="문장을 선택하면 나오는 막대. 번역, 설명, 질문, 표시 색, 복사 버튼 아래에 번역·설명을 누르면 논문 제목과 선택한 글을 Codex에 보낸다는 안내가 있다." loading="lazy" decoding="async"></a>
+          <figcaption>선택한 글을 보낼 때의 안내</figcaption>
+        </figure>
+      </article>
+
+      <article class="feature" aria-labelledby="table-title">
+        <div class="feature-copy">
+          <h3 id="table-title">논문 비교표</h3>
+          <p><strong>⋯ → 논문 비교표</strong>에서 논문을 고르고 <strong>표 만들기</strong>를 누르면 한 편당 한 행으로 정리합니다. 열 이름과 지침은 <strong>열 설정</strong>에서 바꿉니다.</p>
+          <p>결과는 앱에서 원문 근거와 함께 보고, Excel(.xlsx)이나 CSV로 저장할 수 있습니다. 선택한 논문의 본문과 열 지침이 연결한 AI로 전송됩니다.</p>
+        </div>
+        <figure>
+          <a class="shot" href="images/compare-setup.webp"><img src="images/compare-setup.webp" width="1240" height="921" alt="논문 비교표 창. 라이브러리에서 Attention Is All You Need를 선택했고, 요약 길이와 열 설정 아래에 1편 표 만들기 버튼이 있다." loading="lazy" decoding="async"></a>
+          <figcaption>논문과 요약 길이를 고르는 창</figcaption>
+        </figure>
+      </article>
+
+      <article class="feature" aria-labelledby="phone-title">
+        <div class="feature-copy">
+          <h3 id="phone-title">휴대폰 연결</h3>
+          <ol class="mini-steps">
+            <li>PC와 휴대폰에 Tailscale을 설치하고 같은 계정으로 로그인합니다.</li>
+            <li>PC에서 <strong>⋯ → 휴대폰 연결 → 내 Tailscale로 연결</strong>을 누릅니다.</li>
+            <li>휴대폰 카메라로 QR을 열고, 휴대폰에 보이는 여섯 자리 숫자를 PC에 표시된 세 개 중에서 골라 누릅니다.</li>
+          </ol>
+          <p>휴대폰에서 라이브러리를 열고 PDF를 PC로 보낼 수 있습니다. PC가 켜져 있고 Sunlight가 실행 중이어야 합니다.</p>
+        </div>
+        <figure>
+          <a class="shot" href="images/phone-connect.webp"><img src="images/phone-connect.webp" width="1040" height="445" alt="휴대폰 연결 창. 내 Tailscale로 연결 버튼과 다른 연결 방법이 보인다." loading="lazy" decoding="async"></a>
+          <figcaption>PC의 휴대폰 연결 창</figcaption>
+        </figure>
+      </article>
+
+      <div class="pair">
+        <article id="update" aria-labelledby="update-title">
+          <h3 id="update-title">업데이트</h3>
+          <p>새 버전이 있으면 앱이 알려 줍니다. 직접 확인하려면 홈 오른쪽 위 <strong>⋯ → 업데이트 확인</strong>을 누르고 <strong>다운로드 → 저장하고 설치 창 열기 → 업데이트</strong>를 차례로 누릅니다. 논문과 메모는 그대로 남습니다.</p>
+          <p class="sub">앱은 하루 한 번 이 사이트에서 작은 버전 목록을 확인하고, 발행자 서명이 맞는 파일만 설치합니다.</p>
+        </article>
+        <article id="uninstall" aria-labelledby="uninstall-title">
+          <h3 id="uninstall-title">제거</h3>
+          <p>Windows <strong>설정 → 앱 → 설치된 앱</strong>에서 <strong>Sunlight</strong>를 고르고 <strong>제거</strong>를 누릅니다. 논문·메모·설정은 기본으로 남겨 두므로 다시 설치하면 이어서 쓸 수 있습니다.</p>
+          <p class="sub">자료까지 지우려면 제거 창에서 <strong>논문·메모·설정(data 폴더)도 삭제</strong>를 선택합니다. 되돌릴 수 없으니 먼저 <strong>⋯ → Windows 앱 관리 → 백업 및 복원</strong>으로 백업하세요. 압축 버전은 앱을 종료한 뒤 폴더를 지우면 됩니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="privacy" class="block" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">개인정보</h2>
+      <ul class="plain">
+        <li>논문 PDF, 메모, 읽던 위치는 내 PC의 Sunlight 폴더에만 저장됩니다. Sunlight 계정이나 별도 서버는 없습니다.</li>
+        <li>AI 기능을 실행할 때만 그 기능에 필요한 내용(선택한 글, 해당 쪽 본문, 비교표에 고른 논문의 본문 등)이 연결한 서비스로 전송됩니다. 전송된 내용은 그 서비스의 약관과 개인정보 처리방침을 따릅니다.</li>
+        <li>휴대폰 연결은 내가 승인한 휴대폰만 PC에 접속할 수 있습니다.</li>
+        <li>업데이트 확인 때는 이 사이트에서 버전 목록만 받습니다. 사용 기록은 보내지 않습니다.</li>
+        <li>이 사이트는 쿠키와 분석 도구를 쓰지 않습니다. 사이트를 제공하는 GitHub Pages는 접속 기록(IP 주소 등)을 보관할 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section id="previous" class="block" aria-labelledby="previous-title">
+      <h2 id="previous-title">이전 버전</h2>
+      <p>특정 버전이 꼭 필요할 때만 받으세요. 평소에는 위의 최신 버전을 쓰면 됩니다. 더 새로운 버전에서 저장한 라이브러리는 이전 버전에서 열리지 않으므로, 바꾸기 전에 백업하세요.</p>
+      <!-- release:previous -->
+      <p class="pending">아직 이전 버전이 없습니다.</p>
+      <!-- /release:previous -->
+    </section>
+
+    <section id="help" class="block" aria-labelledby="help-title">
+      <h2 id="help-title">문제 해결</h2>
+      <dl class="faq">
+        <dt>다운로드가 막힙니다</dt>
+        <dd>다운로드 목록(<kbd>Ctrl</kbd>+<kbd>J</kbd>)에서 <strong>계속</strong>(Chrome) 또는 <strong>⋯ → 유지</strong>(Edge)를 누릅니다. <a href="#install">설치 1단계</a>를 참고하세요.</dd>
+        <dt>“Windows의 PC 보호” 창에 실행 버튼이 없습니다</dt>
+        <dd><strong>추가 정보</strong>를 먼저 누르면 <strong>실행</strong>이 나타납니다. 회사·학교 PC에서 그래도 보이지 않으면 관리자가 실행을 막은 것이니 관리자에게 문의하세요.</dd>
+        <dt>앱 창 대신 브라우저에서 열립니다</dt>
+        <dd>PC에 WebView2 런타임이 없는 경우입니다. 브라우저에서도 그대로 쓸 수 있습니다. 앱 창으로 쓰려면 Microsoft의 <a href="https://developer.microsoft.com/microsoft-edge/webview2/" rel="noopener">WebView2 런타임</a>을 설치한 뒤 Sunlight를 다시 엽니다.</dd>
+        <dt>1.4.0 이하에서 업데이트가 보이지 않습니다</dt>
+        <dd>기존 Sunlight를 <strong>⋯ → Windows 앱 관리 → 프로그램 종료</strong>로 끝낸 뒤, 이 페이지의 설치파일을 열고 평소 쓰던 폴더인지 확인해 <strong>업데이트</strong>를 누릅니다. 논문과 메모는 그대로 남고, 다음부터는 앱에서 업데이트됩니다.</dd>
+        <dt>SHA-256 값이 다릅니다</dt>
+        <dd>받은 파일을 지우고 다시 받습니다. 다시 받아도 다르면 설치하지 말고 <a href="https://github.com/suffier1/sunlight/issues">GitHub 저장소</a>에 알려 주세요.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <p>Sunlight · <a href="https://github.com/suffier1/sunlight">GitHub 저장소</a></p>
+  </footer>
+</body>
+</html>

@@ -136,3 +136,9 @@ h3 { font-size: 1.12rem; line-height: 1.4; }
 }
 
 .footer { display: flex; flex-wrap: wrap; gap: 1rem; padding-block: 1.5rem 2.5rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+/* 업데이트 내역 */
+.release-notes ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .3rem; }
+.release-notes > li { gap: .45rem; }
+.older-notes { max-width: 46rem; }
+.older-notes > summary { cursor: pointer; color: var(--muted); min-height: 2.25rem; display: inline-flex; align-items: center; }
+.older-notes[open] > summary { margin-bottom: .6rem; }

@@ -41,7 +41,7 @@
       <ol class="steps">
         <li>내려받은 설치 파일을 열고 <strong>설치</strong>를 누르세요. 기본 폴더에는 관리자 권한 없이 설치할 수 있습니다.</li>
         <li>설치가 끝나면 <strong>Sunlight 열기</strong>를 누르세요. 다음부터는 시작 메뉴에서 열 수 있습니다.</li>
-        <li>홈에서 <strong>PDF 추가</strong>를 누르거나 PDF를 창에 끌어다 놓으세요.</li>
+        <li>홈에서 <strong>PDF 추가</strong>를 누르거나 PDF를 창에 끌어다 놓으세요. Google Drive에 있는 파일은 <strong>PDF 추가 ▾ → Google Drive에서 선택</strong>으로 고르세요.</li>
       </ol>
       <p class="start-help"><a href="#warning-text">다운로드나 실행이 막힐 때</a></p>
     </section>
@@ -99,6 +99,66 @@
       </article>
     </section>
 
+    <section id="updates" class="block updates" aria-labelledby="updates-title">
+      <h2 id="updates-title">업데이트 내역</h2>
+      <ul class="versions release-notes">
+        <li>
+          <p class="version"><strong>1.7.0</strong> <span>2026. 11. 27.</span></p>
+          <ul>
+            <li>Google Drive 연동 기능이 추가되었습니다. 홈의 <strong>PDF 추가 ▾ → Google Drive에서 선택</strong>으로 Drive의 PDF를 고르면 바로 추가됩니다. 폴더 안에서 여러 개를 한 번에 고를 수 있고, Google 슬라이드·문서는 PDF로 바꿔 추가합니다.</li>
+            <li>라이브러리에서 제목 앞 아이콘으로 Google Drive 문서와 이 PC 문서를 구분할 수 있습니다.</li>
+            <li>이제 설명창 위치를 마음대로 옮길 수 있습니다. 제목줄을 끌면 되고, 두 번 클릭하면 원래 자리로 돌아갑니다.</li>
+          </ul>
+        </li>
+      </ul>
+      <details class="older-notes"><summary>이전 업데이트</summary>
+      <ul class="versions release-notes">
+        <li>
+          <p class="version"><strong>1.6.1</strong> <span>2026. 11. 26.</span></p>
+          <ul>
+            <li>원문 대조에서 일부 내용이 확인되지 않아도 요약이 저장됩니다. 확인되지 않은 내용은 요약 아래에 따로 표시됩니다.</li>
+            <li>요약의 작은 소제목이 너무 작게 보이던 문제를 수정했습니다.</li>
+            <li>슬라이드 PDF에서 "PowerPoint 프레젠테이션" 같은 기본 제목이 보이던 문제를 수정했습니다.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="version"><strong>1.6.0</strong> <span>2026. 11. 25.</span></p>
+          <ul>
+            <li>문서 종류(논문·강의자료·일반)를 고를 수 있습니다. 강의자료는 개념과 응용 중심, 일반 문서는 번역과 요약 중심으로 정리합니다.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="version"><strong>1.5.3</strong> <span>2026. 11. 25.</span></p>
+          <ul>
+            <li>휴대폰 연결에서 Tailscale 포트를 자동으로 찾습니다.</li>
+            <li>요약의 근거 인용문이 원문과 맞지 않던 문제를 줄였습니다.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="version"><strong>1.5.2</strong> <span>2026. 11. 25.</span></p>
+          <ul>
+            <li>PDF를 추가하면 번역과 요약이 바로 시작됩니다. 원문만 추가하도록 바꿀 수 있습니다.</li>
+            <li>한 쪽을 다시 번역해도 다른 쪽의 번역이 남습니다.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="version"><strong>1.5.1</strong> <span>2026. 11. 25.</span></p>
+          <ul>
+            <li>일부 2단 논문에서 번역문이 두 단에 걸쳐 보이던 문제를 수정했습니다.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="version"><strong>1.5.0</strong> <span>2026. 11. 25.</span></p>
+          <ul>
+            <li>쪽 이동·배율·본문 찾기·목차와 바로 메모하기가 추가되었습니다.</li>
+            <li>번역·요약을 중지하고 이어서 할 수 있으며, AI 서비스로 Gemini를 고를 수 있습니다.</li>
+            <li>라이브러리 백업·복원과 휴대폰 읽기 화면이 개선되었습니다.</li>
+          </ul>
+        </li>
+      </ul>
+      </details>
+    </section>
+
     <section id="help" class="block help" aria-labelledby="help-title">
       <h2 id="help-title">도움말</h2>
       <details id="warning"><summary>다운로드나 실행이 막힐 때</summary>
@@ -146,6 +206,7 @@
       </div></details>
       <details id="privacy"><summary>논문과 메모는 어디에 저장되나요?</summary><div class="answer">
         <p>PDF, 메모, 읽던 위치는 PC의 Sunlight 폴더에 저장됩니다. AI로 번역하거나 표를 만들 때는 선택한 문장이나 논문 본문 등 해당 작업에 쓰이는 내용이 연결한 서비스로 전송됩니다. 전송된 내용에는 그 서비스의 개인정보 처리방침이 적용됩니다.</p>
+        <p>Google Drive에서 추가할 때 Sunlight는 사용자가 고른 파일에만 접근하며, 고른 파일을 PC의 Sunlight 폴더에 받아 둡니다. Google 로그인 정보는 저장하지 않습니다.</p>
         <p>휴대폰 연결은 PC에서 승인한 기기만 사용할 수 있습니다. 이 홈페이지는 분석 도구를 쓰지 않으며 호스팅을 제공하는 GitHub Pages는 접속 기록을 보관할 수 있습니다.</p>
       </div></details>
       <details id="uninstall"><summary>앱 제거와 자료 백업</summary><div class="answer">
